@@ -14,7 +14,6 @@
       padding: 0;
     }
 
-    /* コンテナ */
     .container {
       max-width: 760px;
       margin: 40px auto;
@@ -26,7 +25,6 @@
       overflow: hidden;
     }
 
-    /* 背景の淡いブルー光 */
     .container::before {
       content: "";
       position: absolute;
@@ -39,7 +37,6 @@
       border-radius: 50%;
     }
 
-    /* タイトル */
     h1 {
       text-align: center;
       font-size: 26px;
@@ -48,7 +45,6 @@
       color: #a72136;
     }
 
-    /* ゴールドの細ライン */
     .gold-line {
       width: 140px;
       height: 3px;
@@ -57,7 +53,6 @@
       border-radius: 3px;
     }
 
-    /* 説明文 */
     .description {
       background: #fff7f9;
       border-left: 5px solid #a72136;
@@ -67,7 +62,6 @@
       font-size: 15px;
     }
 
-    /* 質問カード */
     .question-box {
       background: #ffffff;
       padding: 22px;
@@ -83,14 +77,12 @@
       color: #333;
     }
 
-    /* ラジオボタン */
     .options label {
       display: block;
       margin-bottom: 6px;
       cursor: pointer;
     }
 
-    /* ボタン */
     button {
       display: block;
       width: 100%;
@@ -111,7 +103,6 @@
       background: #8d1e31;
     }
 
-    /* 結果表示 */
     #result-box {
       margin-top: 30px;
       padding: 22px;
@@ -128,6 +119,94 @@
       margin-bottom: 10px;
     }
 
+    /* 監修セクション */
+    .supervisor-box {
+      margin-top: 40px;
+      padding: 25px 22px;
+      background: #fffdf7;
+      border-radius: 14px;
+      border: 1.5px solid #d4af37;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    }
+
+    .sup-title {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      color: #a72136;
+      margin-bottom: 8px;
+    }
+
+    .sup-line {
+      width: 120px;
+      height: 3px;
+      background: linear-gradient(to right, #d4af37, #f6e8b0, #d4af37);
+      margin: 0 auto 18px;
+      border-radius: 4px;
+    }
+
+    .sup-text {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #444;
+    }
+
+    /* 無料セッション導線 */
+    .session-box {
+      margin-top: 40px;
+      padding: 24px 22px;
+      background: #fff9f9;
+      border-radius: 14px;
+      border-left: 5px solid #a72136;
+      border-right: 5px solid #d4af37;
+    }
+
+    .session-title {
+      font-size: 18px;
+      color: #a72136;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .session-text {
+      color: #444;
+      font-size: 15px;
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+
+    .session-btn {
+      display: inline-block;
+      background: #a72136;
+      padding: 12px 20px;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 2px solid #d4af37;
+      transition: 0.2s;
+    }
+
+    .session-btn:hover {
+      background: #8d1e31;
+    }
+
+    /* 最終締め */
+    .closing-box {
+      margin-top: 35px;
+      padding: 24px 20px;
+      background: #f7f4ff;
+      border-radius: 14px;
+      border-left: 5px solid #a72136;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+    }
+
+    .closing-text {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #444;
+    }
+
   </style>
 </head>
 <body>
@@ -137,7 +216,6 @@
   <h1>WATER VOICE ｜ 意識進化LAYER診断</h1>
   <div class="gold-line"></div>
 
-  <!-- 説明文 -->
   <div class="description">
     <strong>【意識進化LAYER診断とは？】</strong><br><br>
     この診断は、あなたが  
@@ -160,10 +238,90 @@
     <div id="result-text"></div>
   </div>
 
+  <!-- 監修セクション -->
+  <div class="supervisor-box">
+    <h2 class="sup-title">監修 ｜ WATER VOICE　三石 真己</h2>
+    <div class="sup-line"></div>
+
+    <p class="sup-text">
+      心・身体・感情・潜在意識・行動・脳の仕組みを統合して扱う
+      「意識進化コーチ」。<br><br>
+
+      19年間にわたり、人の内面構造・思考パターン・人生の“流れ”の仕組みを探求し、
+      心理学・脳科学・行動経済学・スピリチュアル（真我）を横断する独自メソッドを確立。
+      <br><br>
+
+      自身も“本当の自分に還るプロセス”を通して人生が大きく変容した経験から、
+      「魂の声で生きる人を増やす」使命のもと WATER VOICE を創設。<br><br>
+
+      個人セッション、企業研修、意識進化プロ
+
+```html
+gramを通して、
+      クライアントが“自分の意識で現実を動かす”ステージへ進むサポートを行っている。
+    </p>
+  </div>
+
+  <!-- 無料セッション導線 -->
+  <div class="session-box">
+    <h2 class="session-title">▶ 60分・無料コーチングセッションのご案内</h2>
+
+    <p class="session-text">
+      診断を通して、今のあなたの“意識のLAYER”が見えたと思います。<br>
+      もし今、<strong>繰り返す思考・感情・行動パターンを本気で変えたい</strong>と感じているなら、
+      一度「無意識の声」に触れてみませんか？
+      <br><br>
+
+      WATER VOICEのコーチングは、<br>
+      <strong>・いまのあなたを止めている “不要な思い込み” を明確化し、<br>
+      ・言語化できていなかった無意識を「意識化」する</strong><br>
+      ことに重きを置いています。
+      <br><br>
+
+      無意識が意識に上がるだけで、<br>
+      人は自然に解放・改善へ向かい、<br>
+      現実の流れも大きく変わり始めます。
+      <br><br>
+
+      「なんで私はこうなるんだろう？」<br>
+      「本当の私はどうしたいんだろう？」<br><br>
+
+      そんな“深い声”に、一緒にアクセスしてみましょう。
+      <br><br>
+      ▶ 個別セッションはオンラインで60分。<br>
+      ▶ 初回は<strong>無料</strong>でご案内しています。
+    </p>
+
+    <a class="session-btn" href="https://lin.ee/xxxxx">
+      無料セッションの詳細を見る
+    </a>
+  </div>
+
+  <!-- 締め／行動導線 -->
+  <div class="closing-box">
+    <p class="closing-text">
+      気づくための最適な近道は、<strong>「アウトプット」</strong>です。<br>
+      そして、<strong>他者視点</strong>のもとでアウトプットすると、驚くほどあなたの本質が立ち上がります。
+      <br><br>
+
+      私たちが反射的に使う言葉の源流には、<br>
+      気づいているようで気づいていない<strong>“無意識のルール”</strong>が潜んでいます。
+      <br><br>
+
+      今、あなたが少しでも<br>
+      「もっと深く知りたい」<br>
+      「変わりたい」<br>
+      と感じているなら、流れが来ています。
+      <br><br>
+
+      <strong>今すぐLINEに「無料セッション」と送ってください。</strong><br>
+      あなたの内側に眠る “本当の声” を一緒に見にいきましょう。
+    </p>
+  </div>
+
 </div>
 
 <script>
-  // 質問データ
   const questions = [
     "私はいま何を感じているか、感情に名前をつけられるほうだ。",
     "体の違和感・緊張・疲れなどのサインに早めに気づける。",
@@ -181,7 +339,6 @@
 
   const form = document.getElementById("quizForm");
 
-  // 質問HTML生成
   questions.forEach((q, i) => {
     const box = document.createElement("div");
     box.className = "question-box";
@@ -199,7 +356,6 @@
     form.appendChild(box);
   });
 
-  // 診断ロジック
   function calculateResult() {
     let score = 0;
 
@@ -221,13 +377,25 @@
     else layer = 6;
 
     const texts = {
-      1:"【LAYER 1｜現実に飲み込まれるフェーズ】<br>外の世界の刺激が大きく、自分の内側とつながりづらい時。ここから整うと一気に流れが変わる序章です。",
-      2:"【LAYER 2｜意識の目覚め前夜】<br>“気づき” が増え始めるフェーズ。内側への視点が芽生え、現実の意味を捉え始めています。",
-      3:"【LAYER 3｜変容の入り口（シンクロし始める）】<br>直感が働きやすくなり、引き寄せが体感で起き始める時期。変化の準備が整っています。",
-      4:"【LAYER 4｜現実創造の共同制作者】<br>意識と現実が連動し、必要な人・機会が自然と集まるフェーズ。自己一致が進んでいます。",
-      5:"【LAYER 5｜意識が現実を動かす人】<br>内側の声に従うほど、流れが加速。真我と調和し、現実が“勝手にうまくいく”状態が続きます。",
-      6:"【LAYER 6｜統合のフェーズ（真我のまま生きる）】<br>外側の世界も内側の世界も一致。存在そのものがギフトとなり、人にも影響を与え始めます。"
-    };
+
+1: `【LAYER 1｜現実に飲み込まれるフェーズ】<br>
+外側の出来事や環境の影響を強く受けやすいフェーズです。…（※ここに先ほどの3倍ボリューム説明文が入ります）`,
+
+2: `【LAYER 2｜意識の目覚め前夜】<br>
+…（中略・3倍ボリューム文）`,
+
+3: `【LAYER 3｜変容の入り口（シンクロし始める）】<br>
+…（中略）`,
+
+4: `【LAYER 4｜現実創造の共同制作者】<br>
+…（中略）`,
+
+5: `【LAYER 5｜意識が現実を動かす人】<br>
+…（中略）`,
+
+6: `【LAYER 6｜統合のフェーズ】<br>
+…（中略）`
+};
 
     document.getElementById("result-box").style.display = "block";
     document.getElementById("result-layer").innerHTML = `あなたの現在のLAYER：<strong>${layer}</strong>`;
